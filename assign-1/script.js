@@ -5,7 +5,12 @@ function showMessage() {
   if (name === "") {
     output.textContent = "Please enter your name!";
     output.style.color = "red";
-  } else {
+  } 
+  else if (!isNaN(name) && name !== "") {
+    output.textContent = "Please enter your name!";
+    output.style.color = "red";
+  }
+  else {
     output.textContent = "Hello, " + name + "! 👋";
     output.style.color = "green";
   }
